@@ -9,10 +9,10 @@ if __name__ == '__main__':
         exit(1)
 
     elif sys.argv[1] == 'gcs':
-        tfds.load("c4ko", try_gcs=True)
+        tfds.load("c4ko/default", try_gcs=True)
 
     elif sys.argv[1] == 'local':
-        tfds.load("c4ko", try_gcs=False)
+        tfds.load("c4ko/default", try_gcs=False)
 
     else:
         print("usage: python main.py [by]")

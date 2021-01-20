@@ -211,7 +211,7 @@ class C4ko(tfds.core.BeamBasedBuilder):
 
   BUILDER_CONFIGS = [
       C4Config(
-          "ko",
+          "default",
           languages=["ko"],
           cc_versions=["2019-18"],
           clean=False,
