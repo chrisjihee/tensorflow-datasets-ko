@@ -214,7 +214,7 @@ class C4ko(tfds.core.BeamBasedBuilder):
           "ko",
           languages=["ko"],
           cc_versions=["2019-18"],
-          clean=True,
+          clean=False,
           paragraph_filter=True,
           dedupe=True,
           badwords_filter=True,
