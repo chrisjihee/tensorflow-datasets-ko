@@ -1,0 +1,9 @@
+.idea
+.ipynb_checkpoints
+.~lock.*
+*.ckpt
+*.pyc
+/runs
+/build
+/dist
+/*.egg-info
