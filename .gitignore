@@ -3,7 +3,8 @@
 .~lock.*
 *.ckpt
 *.pyc
-/runs
-/build
-/dist
 /*.egg-info
+/runs
+/dist
+/build
+/output
