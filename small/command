@@ -1,0 +1,1 @@
+/usr/local/google/_blaze_adarob/ff24bc3d1c2b548b71de49d88f1955cd/execroot/google3/blaze-out/k8-py3-opt/bin/third_party/py/t5/models/mesh_transformer_main --gcp_project= --tpu_zone= --model_dir=/bigstore/t5-data/pretrained_models/small --use_model_api --mode=export --export_dir=/cns/is-d/home/adarob/ttl=1d --logtostderr

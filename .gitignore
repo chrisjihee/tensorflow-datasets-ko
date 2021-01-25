@@ -8,3 +8,5 @@
 /dist
 /build
 /output
+model.ckpt*
+events.out.*
