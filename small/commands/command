@@ -1,1 +1,0 @@
-/home/chris/anaconda3/envs/tf/bin/t5_mesh_transformer --model_dir=small --t5_tfds_data_dir= --gin_file=dataset.gin --gin_param=utils.run.mesh_shape = 'model:1,batch:1' --gin_param=utils.run.mesh_devices = ['gpu:0'] --gin_param=MIXTURE_NAME = 'glue_mrpc_v002' --gin_file=small/operative_config.gin

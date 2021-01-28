@@ -5,15 +5,15 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='tensorflow-datasets-ko',
-    version='0.2.2',
+    version='0.2.3',
     long_description=long_description,
     long_description_content_type='text/markdown',
     description='Custom TensorFlow Datasets for Korean Text Data',
     author='Jihee Ryu',
     author_email='chrisjihee@etri.re.kr',
     url='https://github.com/chrisjihee/tensorflow-datasets-ko',
-    download_url='https://github.com/chrisjihee/tensorflow-datasets-ko/archive/v0.2.2.tar.gz',
-    install_requires=["tensorflow-datasets[c4]"],
+    download_url='https://github.com/chrisjihee/tensorflow-datasets-ko/archive/v0.2.3.tar.gz',
+    install_requires=["tensorflow-datasets"],
     packages=find_packages(exclude=[]),
     keywords=['TensorFlow', 'Dataset', 'C4', 'Korean', 'Python'],
     python_requires='>=3.6',

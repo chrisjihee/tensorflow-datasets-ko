@@ -1,3 +1,0 @@
-# -*-Python-*-
-# The default sequence lengths to use if none are specified.
-utils.run.sequence_length = {'inputs': 512, 'targets': 512}
