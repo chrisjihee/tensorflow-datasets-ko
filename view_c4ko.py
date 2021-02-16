@@ -1,5 +1,4 @@
 import json
-import sys
 from pathlib import Path
 
 import tensorflow_datasets as tfds
@@ -7,7 +6,7 @@ import tensorflow_datasets as tfds
 from tensorflow_datasets_ko.text.c4ko import C4ko
 
 
-def check_c4ko_dataset():
+def view_c4ko_default():
     print(f"[c4ko] {C4ko.BUILDER_CONFIGS[0].description}")
     data, info = tfds.load("c4ko/default", data_dir="/home/chris/tensorflow_datasets", with_info=True)
     print(info)
@@ -34,18 +33,4 @@ def check_c4ko_dataset():
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2 or sys.argv[1] not in ['gcs', 'local']:
-        print("usage: python main.py [by]")
-        print("       - by: 'gcs' or 'local'")
-        exit(1)
-
-    elif sys.argv[1] == 'gcs':
-        tfds.load("c4ko/default", try_gcs=True)
-
-    elif sys.argv[1] == 'local':
-        check_c4ko_dataset()
-
-    else:
-        print("usage: python main.py [by]")
-        print("       - by: 'gcs' or 'local'")
-        exit(2)
+    view_c4ko_default()

@@ -1,4 +1,3 @@
-import sys
 from pathlib import Path
 
 import tensorflow_datasets as tfds
@@ -28,18 +27,4 @@ def view_squad_v11():
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2 or sys.argv[1] not in ['gcs', 'local']:
-        print("usage: python main.py [by]")
-        print("       - by: 'gcs' or 'local'")
-        exit(1)
-
-    elif sys.argv[1] == 'gcs':
-        tfds.load("c4ko/default", try_gcs=True)
-
-    elif sys.argv[1] == 'local':
-        view_squad_v11()
-
-    else:
-        print("usage: python main.py [by]")
-        print("       - by: 'gcs' or 'local'")
-        exit(2)
+    view_squad_v11()
