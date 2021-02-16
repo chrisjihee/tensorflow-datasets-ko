@@ -22,8 +22,8 @@ def clean(x):
 
 
 def check_c4ko_dataset(rate_kor_letters=0.3):
-    data, info = tfds.load("c4ko/default", data_dir="/home/chris/tensorflow_datasets", with_info=True)
     print(f"[c4ko] {C4ko.BUILDER_CONFIGS[0].description}")
+    data, info = tfds.load("c4ko/default", data_dir="/home/chris/tensorflow_datasets", with_info=True)
     print(info)
     print('-' * 120)
 
